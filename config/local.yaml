@@ -1,0 +1,21 @@
+env: "local" #local, dev, prod
+
+http_server:
+  address: "localhost:8082"
+  timeout: 4s # время на чтение запроса и такое же время на отправку ответа
+  idle_timeout: 60s # время жизни соединения с клиентом
+
+database:
+  host: "localhost"
+  port: 5433
+  user: "admin"
+  password: "1234"
+  name: "kp_db"
+
+aws:
+  region: "ru-7"
+  access_key_id: "admin"
+  secret_access_key: "password"
+  endpoint_uri: "http://localhost:9000"
+  bucket: "my-pdf-storage-bucket"
+  upload_dir: "pdfs"
